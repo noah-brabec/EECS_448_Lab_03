@@ -4,12 +4,26 @@ var imageIndex = 0;
 
 function next()
 {
-  imageIndex++;
+  if((imageIndex + 1) > 4)
+  {
+    imageIndex = 0;
+  }
+  else
+  {
+    imageIndex++;
+  }
   document.getElementById("images").src = listOfImages[imageIndex] + ".jpg";
 }
 
 function previous()
 {
-  imageIndex--;
+  if((imageIndex - 1) < 0)
+  {
+    imageIndex = 4;
+  }
+  else
+  {
+    imageIndex--;
+  }
   document.getElementById("images").src = listOfImages[imageIndex] + ".jpg";
 }
