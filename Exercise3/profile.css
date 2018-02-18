@@ -1,1 +1,12 @@
-wow
+body
+{
+  background-color: #ccffcc;
+  text-align: center;
+  background-image: url(background.jpg);
+  color: white;
+}
+p
+{
+  font-family: serif;
+  font-size: 22px;
+}
