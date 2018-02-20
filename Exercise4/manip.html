@@ -1,1 +1,39 @@
 <html>
+  <head>
+    <script type="text/javascript"
+            src="manip.js">
+            </script>
+    <link href="manip.css"
+          rel="stylesheet"
+          type="text/css"/>
+    <title> Thats Right, You Can Change The Colors </title>
+  </head>
+  <body>
+    <p id = "main">
+      Holy changing rainbow Batman! If you enter number from 0 to 255 into those
+      boxes below and hit the "Change Border/Background!" button, the colors on this webpage
+      will change!!
+    </p>
+    <form>
+      <h3> Edit the Border </h3>
+      Red:<input type="text" id="borderR"
+      value="0-255">
+      Green:<input type="text" id="borderG"
+      value="0-255">
+      Blue:<input type="text" id="borderB"
+      value="0-255">
+      Width:<input type="text" id="borderW"
+      value="0"><br>
+      <button type="button" onclick="changeBorder()">Change Border!</button>
+
+      <h3> Edit the Background </h3>
+      Red:<input type="text" id="backgroundR"
+      value="0-255">
+      Green:<input type="text" id="backgroundG"
+      value="0-255">
+      Blue:<input type="text" id="backgroundB"
+      value="0-255"><br>
+      <button type="button" onclick="changeBackground()">Change Background!</button>
+    </form>
+  </body>
+</html> 
